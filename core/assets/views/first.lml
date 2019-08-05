@@ -1,0 +1,5 @@
+<window title="@firstTitle" onecolumn="true">
+    @helloWorld
+    <textbutton onclick="roll">@randomPrompt</textbutton>
+    <label id="random"/>
+</window>

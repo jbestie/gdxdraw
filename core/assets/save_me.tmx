@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+ <properties>
+  <property name="hexsidelength" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="GrassTile" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="grass-tile.png" width="48" height="48"/>
+ </tileset>
+ <tileset firstgid="2" name="railroad_horizontal" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="railroad_horizontal.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="station" tilewidth="32" tileheight="64" tilecount="1" columns="1">
+  <image source="station.png" width="32" height="64"/>
+ </tileset>
+ <tileset firstgid="4" name="CustomTrains" tilewidth="64" tileheight="32" tilecount="8" columns="2">
+  <image source="custom_trains.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="12" name="train_direction" tilewidth="32" tileheight="32" tilecount="9" columns="3">
+  <image source="train_direction.png" width="96" height="96"/>
+ </tileset>
+ <layer id="1" name="ground" width="8" height="8">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="2" name="stations">
+  <object id="5" name="stationA" gid="3" x="0" y="128" width="32" height="64"/>
+  <object id="6" name="stationB" gid="3" x="224" y="128" width="32" height="64"/>
+ </objectgroup>
+ <layer id="3" name="railroads" width="8" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="trains" width="8" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>
